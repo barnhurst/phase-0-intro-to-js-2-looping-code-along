@@ -1,14 +1,21 @@
-function writeCards(names, event) {
+const names = ["Lisa", "Kaitlin", "Jan"]
+
+const typeOfGift = `surprise`
+function writeCards(names) {
     let messages = [];
-    for(let i=0; i < names.legth; i++) {
-        messages.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+    for(let i=0; i < names.length; i++) {
+        messages.push(`Thank you, ${names[i]}, for the wonderful ${typeOfGift} gift!`);
+        
     } 
     return messages
 }
 
-function countDown(positiveNumber) { 
-    while(positeNumber >=0) {
-        console.log(positiveNumber);
-        positiveNumber--;
+function countDown(i) { 
+    
+    while(i >=0) {
+      console.log(i)  
+    i--;
     }
+    return i
 }
+countDown(4)
